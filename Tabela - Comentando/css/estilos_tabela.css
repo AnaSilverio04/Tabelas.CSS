@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse; /* Retira o espaço entre as células da tabela */    
+    -webkit-border-radius: 5px; /* HACK: Borda arredondada */
+    border-radius: 5px; /* HACK: Borda arredondada */
+    overflow: hidden;   /* HACK: Borda arredondada */  
+    width: 100%;
+    margin:2% 0 2% 0;  /* Margem: Topo, direita, abaixo e esquerda */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3); /* Adiciona sombra ao container da tabela */
+    cursor: default; /* Altera o cursor do mouse */
+}
+
+/* Selecionando todas as tags tr que estão dentro da thread que está dentro da table  */
+table thead tr 
+{ 
+    background: #000; 
+    color: #FFF; 
+    text-transform: uppercase;
+    text-align: left;
+    padding: 2%;
+}
+
+/* Dois seletores compartilhando a mesma regra de formatação */
+table tbody td, table thead th { padding: 10px; }
+
+table tbody td {  border-bottom: 1px solid #ddd; }
+
+table tbody tr:hover{
+    background-color: yellow; cursor: crosshair;
+}
+
+/* Alternativa para tabela zebra usando pseudo classe ntn-child,
+   no caso pegando todas as linhas ímpares  */
+table tbody tr:nth-child(odd) { background-color: #EEE; }

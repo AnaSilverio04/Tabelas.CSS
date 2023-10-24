@@ -1,0 +1,49 @@
+
+/* Selecionando todos os elementos HTML (asterisco) e zerando margem e 
+   espaçamento interno  */
+* { 
+    margin: 0; /* margem */
+    padding: 0;  /* espaçamento interno */
+}
+
+/* Seletor via tag, no caso o nome da tag. Todas as propriedades dentro 
+   do seletor serão aplicadas a todas as tags body  */
+body { 
+    background: #eee; /* Cor do fundo em hexadecimal */
+    padding: 5%; /* Espaçamento interno do elemento em porcentagem */
+    font-family: "Trebuchet MS"; /* Fonte padrão da página (estilo do texto) */
+}
+
+/* Seletor via atributo id, valor do atributo id de uma tag precedido por #
+   Somente a tag cujo id é corpo terá as formatações abaixo.  */
+#corpo {
+    background: #FFF;
+    border: 1px solid #999; /* Formatação de borda: espeçura, estilo e cor */
+    border-radius: 5px; /* Borda arredondada  */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3); /* sombra no container usando cores em RGBA  */
+    margin: 0 auto; /* HACK: centralização de um container */
+}
+
+header {
+    background-color: #CCC;
+    padding: 2%;
+    border-bottom: 1px solid #999;    /* Borda apenas debaixo */ 
+}
+
+/* Selecionando todas as tags h1 que estão dentro da tag header */
+header h1 {
+    text-align: center; /* Alinhamento do texto no centro  */
+    text-shadow: 1px 1px 2px #FFF; /* Sombra do texto: distancia, distancia do topo, difusão e cor da sombra   */
+    text-transform: uppercase; /* Convertendo o texto para letras maiúsculas  */
+}
+
+main {
+    padding: 2%;
+}
+
+footer {
+    background: #ccc;
+    text-align: center;
+    padding: 2%;
+    border-top: 1px solid #999; /* Borda do topo */
+}

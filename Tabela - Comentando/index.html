@@ -1,0 +1,219 @@
+<!-- Definição do DOCTYPE para passar ao navegador qual a versão do HTML que iremos usar -->
+<!DOCTYPE html>
+
+<!-- Tag de abertura (raiz) do documento com o atributo alng definido 
+     como Português do Brasil (ajuda nas traduções e verificação ortográfica) -->
+<html lang="pt-br">
+
+<!-- Cabeçalho da do documento HTML, informações nem sempre visíveis ao usuário -->
+<head>
+
+    <!-- Meta dado que define a codificação de charset, na prática: corrige problemas de acentos -->
+    <meta charset="utf-8" />
+
+    <!-- Define a escala inicial de apresentação do site. O Viewport é a parte do navegador 
+         onde o site aparece, então definimos que a largura do site será a largura do dispositivo
+         e a escala de apresentação do site será de 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título do documento HTML, texto que aparece na aba do navegador -->
+    <title>Tabelas Semânticas</title>
+    
+    <!-- Dois arquivos CSS separados, um para estilos e outro apenas para tabela. -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos_tabela.css" />
+</head>
+
+<!-- Conteúdo que é de fato apresentado ao usuário, tudo fica dentro da tag body -->
+<body>
+
+    <!-- Div que serve de container para todo corpo que será apresentado, ela foi adicionada para abrigar a tríade de tags
+         que compõe o site: header, main e footer. Fazendo dessa maaneira não precisaremos aplicar formatação CSS
+         diretamente no body  -->
+    <div id="corpo">
+
+        <!-- Cabeçalho da página, não confundir com a tag head, aqui apresentamos itens como logotipo, nome do site e menu de navegação -->
+        <header>
+
+            <!-- Tag do título principal, não deve se repetir na página -->
+            <h1>Loja de Hardware</h1>
+        </header>
+
+        <!-- Contéudo principal da página, do meio. -->
+        <main>
+            <h2>Lista de Produtos</h2>
+            <!-- Container da tabela -->
+            <table>
+                 <!-- Cabeçalho da tabela -->
+                <thead>
+                     <!-- Linha do cabeçalho da tabela, "r" de row -->
+                    <tr>
+                        <!-- Célula do cabeçalho, "h" é de head -->
+                        <th>Código</th>
+                        <th>Categoria</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                 <!-- Corpo da tabela -->
+                <tbody>                    
+                     <!-- TR é a linha da tabela, no caso essa é a primeira. -->
+                    <tr>
+                         <!-- TD são os dados, "celula" da tabela. -->
+                        <td>896</td>
+                        <td>Processador</td>
+                        <td>Ryzen 7 5800</td>
+                        <td>R$ 1.862,00</td>
+                    </tr>                
+                    <tr>
+                        <td>452</td>
+                        <td>Placa de Vídeo</td>
+                        <td>NVidia RTX 4070 TI</td>
+                        <td>R$ 4.822,00</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                    <tr>
+                        <td>963</td>
+                        <td>Placa Mãe</td>
+                        <td>Asus B450 TUF</td>
+                        <td>R$ 989,56</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <!-- Rodapé da página -->
+        <footer>
+            Loja De Hardware Ltda
+
+            <!-- Tag que define um endereço -->
+            <address>
+                Rua da Fatec, 286
+                - Jaú - 
+                
+                <!-- Define uma abreviação -->
+                <abbr title="São Paulo - Brasil">SP</abbr>
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
